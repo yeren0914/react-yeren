@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <base href="<%= htmlWebpackPlugin.options.baseUrl %>">
+    <title>react-demo</title>
+    <script type="text/javascript">
+        (function (win,doc) {
+            function setSize() {
+                doc.documentElement.style.fontSize=100*document.documentElement.clientWidth/750+'px';
+            }
+            setSize();
+            win.addEventListener('resize',setSize,false)
+        })(window,document)
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <!--<script src="../build/js/build.js"></script>-->
+</body>
+</html>
