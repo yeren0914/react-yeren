@@ -13,9 +13,9 @@ class Home extends React.Component {
                 {id:1,name:'嘻嘻哈',age:11},
                 {id:1,name:'嘻嘻哈',age:11}
             ]
-        }
+        };
+        
     }
-
 
     render() {
         return (
@@ -27,7 +27,6 @@ class Home extends React.Component {
                         <th>名称</th>
                         <th>年龄</th>
                     </tr>
-
                 </table>
             </div>
         )

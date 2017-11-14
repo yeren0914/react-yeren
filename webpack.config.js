@@ -10,10 +10,13 @@ module.exports = {
     devServer:{
         disableHostCheck: true
     },
-    entry: './src/app',
+    entry:'./src/app',
     output:{
-        path: __dirname+'/build',
+        path:__dirname+'/build',
         filename:'js/build.js'
+    },
+    resolve: {
+        extensions: ['.jsx', '.js', '.json','jpg']
     },
     module: {
         rules: [
@@ -40,6 +43,11 @@ module.exports = {
             {
                 test:/\.scss$/,
                 loader:"style-loader!css-loader!sass-loader"
+            },
+            {
+                test:/\.jpg?g$|\.gif$|\.png%i/,
+                exclude:/node_modules/,
+                loader:'url-loader?limit=20000'
             }
         ]
     },

@@ -1,7 +1,6 @@
 import React from 'react';
 import List from '../containers/list'
 import Edit from  '../containers/edit';
-import Demo from '../containers/demo.jsx'
 import {Button} from 'antd-mobile'
 import { Link } from 'react-router-dom'
 import './style.scss'
@@ -24,7 +23,6 @@ class ToDoApp extends React.Component {
         return(
             <div className="box">
                 <h5>my to do app</h5>
-                <Demo />
                 <hr/>
                 List goes here
                 <List listItems={this.state.list} inputVal={this.state.newVal} />
