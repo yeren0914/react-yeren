@@ -45,7 +45,7 @@ module.exports = {
                 loader:"style-loader!css-loader!sass-loader"
             },
             {
-                test:/\.jpg?g$|\.gif$|\.png%i/,
+                test:/\.jpg?g$|\.gif$|\.png$/i,
                 exclude:/node_modules/,
                 loader:'url-loader?limit=20000'
             }

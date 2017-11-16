@@ -10,7 +10,7 @@ class GridList extends React.Component {
         const gridData = this.props.gridData;
         return(
             <div>
-                <Grid data={gridData} activeStyle={false} columnNum="4" 
+                <Grid data={gridData} activeStyle={false} columnNum="3" 
                 renderItem={ gridData =>(
                     <div  className="grid-list" >
                         <img src={ gridData.icon} className="grid-img"  alt=""/>

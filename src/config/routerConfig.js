@@ -8,22 +8,25 @@ import Index from 'bundle-loader?lazy!../containers/index/index.component';
 import Util from '../helpers/util';
 import { weChatConfig } from './wechatService';
 
-import ToDoApp from 'bundle-loader?lazy!../containers/todo.js';
-import Home from 'bundle-loader?lazy!../containers/router/home';
+import Home from 'bundle-loader?lazy!../containers/home/home.component';
 import List from 'bundle-loader?lazy!../containers/router/list';
 
 const customHistory = createBrowserHistory()
 
+//按需 加载封装
 function loaderComp(comp){
-    const according = (props) => (
+    const according = (pro) => (
         <Bundle load={comp}>
-            {(Container) => <Container {...props}/>}
+            {(Container) => <Container {...pro}/>}
         </Bundle>
     )
     return according;
 }
 
 class RouterConfig extends React.Component {
+    constructor(){
+        super()
+    }
 
     async componentDidMount(){
         await Util.isWX();//判断是否是微信
@@ -34,10 +37,7 @@ class RouterConfig extends React.Component {
         return(
             <Router history={customHistory}>
                 <div>
-                    <Route exact path="/" component={loaderComp(Index)}/>
-                    <Route path="/ToDoApp" component={loaderComp(ToDoApp)}/>
-                    <Route path="/home" component={loaderComp(Home)}/>
-                    <Route path="/list" component={loaderComp(List)}/>
+                    <Route exact path="/" component={loaderComp(Home)}/>
                 </div>
             </Router>
         )

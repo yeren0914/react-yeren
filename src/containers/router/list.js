@@ -4,8 +4,7 @@ class List extends React.Component{
     render(){
         return(
             <div>
-                列表页面
-                <Link to="/home" >前往首页</Link>
+                列表页面列表页面列表页面列表页面
             </div>
         )
     }

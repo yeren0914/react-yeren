@@ -6,7 +6,6 @@ class Home extends React.Component{
             <div>
                 首页内容嘻嘻
                 <br/>
-                <Link to="/" >返回APP</Link>
             </div>
         )
     }

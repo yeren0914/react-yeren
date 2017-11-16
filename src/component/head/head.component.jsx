@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavBar, Icon,Popover } from 'antd-mobile';
+import './head.scss';
 const Item = Popover.Item;
 const myImg = src => <img src={`https://gw.alipayobjects.com/zos/rmsportal/${src}.svg`} className="am-icon am-icon-xs" alt="" />;
 class Header extends React.Component {
@@ -32,7 +33,7 @@ class Header extends React.Component {
     render() {
         const headTit = this.props.headerTitle;
         return (
-            <div>
+            <div className="head-box">
                 <NavBar
                     mode="light"
                     leftContent={this.isShowBack()}
