@@ -1,0 +1,12 @@
+.head-img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin:60px auto 10px;
+    overflow: hidden;
+    img{
+       display: inline-block;
+        width: 100%;
+    }
+}

@@ -19,7 +19,7 @@
         text-align: center;
         background: #fff;
         font-size: 14px;
-        color:rgba(120,211,190,.8);
+        color:#ccc;
         a,a>span{
             display: block;
             font-size: 12px;
@@ -49,7 +49,7 @@
         }
     }
     .tab-item.active{
-        a > span{
+        span{
             color: #222;
         }
     }
