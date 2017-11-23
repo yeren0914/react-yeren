@@ -41,12 +41,12 @@ class App extends React.Component {
             textAuto:true,
             textType:true,
             gridData:[
-                {icon:require('./static/img/head1.jpg'),'text':'嘻哈猴'},
-                {icon:require('./static/img/head1.jpg'),'text':'王老吉'},
-                {icon:require('./static/img/head1.jpg'),'text':'百事可乐'},
-                {icon:require('./static/img/head1.jpg'),'text':'AD概念'},
-                {icon:require('./static/img/head1.jpg'),'text':'加多宝'},
-                {icon:require('./static/img/head1.jpg'),'text':'泸州老窖'},
+                {icon:require('./static/img/head1.jpg'),'text':'百事可乐',sex:0,phone:'15678888882',dateTime:'1992-09-01',pwd:'123456'},
+                {icon:require('./static/img/head1.jpg'),'text':'无所事事',sex:1,phone:'15678888881',dateTime:'1991-11-01',pwd:'123456'},
+                {icon:require('./static/img/head1.jpg'),'text':'无事生非',sex:0,phone:'15678888883',dateTime:'1993-08-01',pwd:'123456'},
+                {icon:require('./static/img/head1.jpg'),'text':'春去秋来',sex:0,phone:'15678888884',dateTime:'1994-01-01',pwd:'123456'},
+                {icon:require('./static/img/head1.jpg'),'text':'万里无云',sex:1,phone:'15678888885',dateTime:'1995-02-01',pwd:'123456'},
+                {icon:require('./static/img/head1.jpg'),'text':'叶公好龙',sex:0,phone:'15678888886',dateTime:'1996-03-01',pwd:'123456'},
             ],
             imgSrc:'http://pic49.nipic.com/file/20140927/19617624_230415502002_2.jpg',
             childrenTab:[

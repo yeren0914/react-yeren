@@ -15,6 +15,13 @@ export default {
         } catch(ex){
             console.log('localStorage.setItem报错',ex.message)
         }
+    },
+    removeItem:function(key){
+        try{
+            localStorage.removeItem(key);
+        } catch(ex){
+            console.log('localStorage.removeItem报错',ex.message)
+        }
     }
 }
 
